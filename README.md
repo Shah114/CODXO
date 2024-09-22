@@ -7,3 +7,8 @@ Shah GPT is a conversational AI chatbot powered by the Google Gemini API. This c
 <br/>
 
 ## Key Features:
+* Supports Google Gemini API for generating responses.
+* Users can ask any question, and the chatbot provides relevant answers.
+* Built using Flask for the backend.
+* A simple, elegant design using HTML, CSS (style.css), and JavaScript (scripts.js) for the frontend. <br/>
+<br/>
