@@ -28,4 +28,17 @@ Shah GPT is a conversational AI chatbot powered by the Google Gemini API. This c
    git clone https://github.com/Shah114/CODXO.git
    ```
 
-2. 
+2. Navigate to the chatbot directory:
+
+   ```bash
+   cd src/chatbot
+   ```
+
+3. Run the Flask app:
+
+   ```bash
+   python app.py
+   ```
+<br/>
+
+###
