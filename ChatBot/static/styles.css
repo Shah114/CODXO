@@ -1,0 +1,189 @@
+/* Body: Full viewport centering with black background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container: Chatbot box centered with yellow accents */
+.container {
+    width: 600px;
+    max-width: 100%; /* Ensure container doesn't exceed viewport width */
+    padding: 30px;
+    background-color: #111; /* Darker black for contrast */
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.6); /* Yellow glowing shadow */
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: float 4s ease-in-out infinite; /* Floating animation */
+    overflow: hidden; /* Prevents overflow of child elements */
+}
+
+/* Floating animation for container */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Header: Chat title with flashing effect */
+h1 {
+    text-align: center;
+    color: #ffeb3b; /* Yellow title */
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: flash 2s infinite; /* Flashing effect */
+}
+
+/* Flashing animation for the title */
+@keyframes flash {
+    0%, 100% { color: #ffeb3b; }
+    50% { color: #fff; }
+}
+
+/* Chat Box: Yellow border and smooth scrolling */
+.chat-box {
+    height: 400px;
+    width: 100%; /* Full width of container */
+    max-width: 100%; /* Prevent overflow */
+    border: 3px solid #ffeb3b; /* Yellow border */
+    border-radius: 10px;
+    overflow-y: auto;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #333; /* Dark background for chat box */
+    color: #fff; /* White text inside */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box; /* Include padding in width */
+    scrollbar-width: thin;
+    scrollbar-color: #ffeb3b #111; /* Custom scrollbar */
+}
+
+/* Scrollbar styling */
+.chat-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chat-box::-webkit-scrollbar-track {
+    background: #111; /* Dark background */
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background-color: #ffeb3b; /* Yellow scrollbar */
+    border-radius: 10px;
+}
+
+/* User Message: Yellow speech bubble with slide-in animation */
+.chat-box .user {
+    text-align: right;
+    color: #000; /* Black text for user */
+    background-color: #ffeb3b; /* Yellow bubble for user */
+    padding: 10px;
+    border-radius: 15px 15px 0 15px; /* Speech bubble shape */
+    align-self: flex-end;
+    max-width: 80%; /* Limit width for better centering */
+    word-wrap: break-word;
+    animation: slide-in-right 0.5s ease-out; /* Slide-in from the right */
+}
+
+/* Assistant Message: White speech bubble with slide-in animation */
+.chat-box .assistant {
+    text-align: left;
+    color: #fff; /* White text for assistant */
+    background-color: #444; /* Dark grey for assistant */
+    padding: 10px;
+    border-radius: 15px 15px 15px 0; /* Speech bubble shape */
+    align-self: flex-start;
+    max-width: 80%; /* Limit width for better centering */
+    word-wrap: break-word;
+    animation: slide-in-left 0.5s ease-out; /* Slide-in from the left */
+}
+
+/* Slide-in animations */
+@keyframes slide-in-right {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-left {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Chat Form: Flexbox for input and button with focus animation */
+#chat-form {
+    width: 100%; /* Full width of container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input: Dark background, yellow border, white text */
+#user-input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ffeb3b; /* Yellow border */
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth focus transition */
+}
+
+/* Input focus: Highlight with glowing border */
+#user-input:focus {
+    outline: none;
+    border-color: #fff; /* White border on focus */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* White glow */
+}
+
+/* Button: Yellow with black text */
+button {
+    width: 18%;
+    padding: 12px;
+    background-color: #ffeb3b; /* Yellow button */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button hover: Darker yellow */
+button:hover {
+    background-color: #ffd700; /* Darker yellow on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.6); /* Glowing effect */
+}
+
+/* Style for the copy button */
+.copy-btn {
+    font-size: 12px; /* Smaller font size */
+    padding: 5px 10px; /* Smaller padding */
+    background-color: #ffeb3b; /* Yellow background to match theme */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    margin-left: 10px; /* Space between the text and button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+.copy-btn:hover {
+    background-color: #ffd700; /* Darker yellow on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
