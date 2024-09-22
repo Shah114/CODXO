@@ -22,3 +22,10 @@ Shah GPT is a conversational AI chatbot powered by the Google Gemini API. This c
 <br/>
 
 ### How to Run:
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Shah114/CODXO.git
+   ```
+
+2. 
