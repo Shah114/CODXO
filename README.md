@@ -14,3 +14,11 @@ Shah GPT is a conversational AI chatbot powered by the Google Gemini API. This c
 <br/>
 
 ### File Structure:
+* app.py: The main Flask application.
+* configure.py: Stores the API key and configurations.
+* templates/index.html: Frontend HTML file for the chatbot interface.
+* static/style.css: CSS file for styling the chatbot interface.
+* static/scripts.js: JavaScript file for chatbot interaction. <br/>
+<br/>
+
+### How to Run:
