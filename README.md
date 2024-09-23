@@ -68,3 +68,14 @@ The Gender Classification project is a web app that classifies the gender of a p
    ```
 
 2. Navigate to the gender classification directory:
+
+   ```bash
+   cd src/GenderClassification
+   ```
+
+3. Run the Flask app:
+
+   ```bash
+   python app.py
+   ```
+<br/>
