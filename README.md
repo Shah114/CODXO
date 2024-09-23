@@ -78,4 +78,3 @@ The Gender Classification project is a web app that classifies the gender of a p
    ```bash
    python app.py
    ```
-<br/>
