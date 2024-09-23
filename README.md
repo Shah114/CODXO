@@ -41,8 +41,16 @@ Shah GPT is a conversational AI chatbot powered by the Google Gemini API. This c
    ```
 <br/>
 
-# 2.Gender Classification
+# 2. Gender Classification
 The Gender Classification project is a web app that classifies the gender of a person based on an uploaded image. It uses a pretrained model from rizvandwiki/gender-classification available in the transformers library. <br/>
 <br/>
 
-###
+### Key Features:
+* Uses Flask to serve the web app.
+* Implements rizvandwiki/gender-classification for gender prediction.
+* Simple and intuitive web interface for uploading and testing images.
+* Styled using HTML and CSS (style.css) for the frontend.
+* Uploads folder to store user-submitted images temporarily. <br/>
+<br/>
+
+### File Structure:
