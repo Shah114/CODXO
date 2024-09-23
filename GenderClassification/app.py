@@ -7,7 +7,7 @@ from transformers import AutoImageProcessor, AutoModelForImageClassification
 
 # Creating app
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'C:/Projects/InternshipProjects/GenderClassification/static/uploads'
+app.config['UPLOAD_FOLDER'] = 'GenderClassification/static/uploads'
 
 # Load the processor and the model
 processor = AutoImageProcessor.from_pretrained("rizvandwiki/gender-classification")
