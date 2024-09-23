@@ -54,3 +54,10 @@ The Gender Classification project is a web app that classifies the gender of a p
 <br/>
 
 ### File Structure:
+* app.py: The main Flask application for handling image uploads and classification.
+* templates/index.html: Frontend HTML file for uploading images.
+* static/style.css: CSS file for styling the web interface.
+* static/uploads/: Directory where test images are stored. <br/>
+<br/>
+
+### How to Run:
