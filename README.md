@@ -107,4 +107,9 @@ The Syrup Bottle Detection project is an object detection system trained using t
 2. Navigate to the syrup bottle detection directory:
 
    ```bash
+   cd src/ObjectDetection
    ```
+3. Run the model on the sample video.
+4. The output will be saved as output_video.mp4 in the same directory. <br/>
+<br/>
+
