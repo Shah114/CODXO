@@ -1,0 +1,8 @@
+path: Data/Images
+train: Data/train
+val: Data/valid
+test: Data/test
+
+# Classes
+names:
+  0: syrup
