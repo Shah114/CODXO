@@ -98,6 +98,12 @@ The Syrup Bottle Detection project is an object detection system trained using t
 * output_video.mp4: The output video showing the model's detection results. <br/>
 <br/>
 
+### Download the dataset from drive:
+* All images - 
+* Test -
+* Train -
+* Valid - 
+
 ### How to Run:
 1. Clone the repository:
 
