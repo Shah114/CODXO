@@ -78,3 +78,9 @@ The Gender Classification project is a web app that classifies the gender of a p
    ```bash
    python app.py
    ```
+<br/>
+
+# Syrup Bottle Detection
+The Syrup Bottle Detection project is an object detection system trained using the YOLOv8n model. The model has been trained on a custom dataset to detect and count syrup bottles in images and videos. <br/>
+
+### Key Features:
