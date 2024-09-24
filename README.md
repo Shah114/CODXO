@@ -91,4 +91,11 @@ The Syrup Bottle Detection project is an object detection system trained using t
 * The project includes the output video generated after running the detection on the sample video. <br/>
 <br/>
 
+### File Structure:
+* SyrupProject.ipynb: Contains the code for loading the YOLOv8n model and running inference on images or videos.
+* config.yaml: Configuration file defining the directories for training, testing, and validation datasets.
+* sample_video.mp4: A sample video for testing the model’s performance on syrup bottle detection.
+* output_video.mp4: The output video showing the model's detection results. <br/>
+<br/>
 
+### How to Run:
