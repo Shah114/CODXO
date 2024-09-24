@@ -84,3 +84,11 @@ The Gender Classification project is a web app that classifies the gender of a p
 The Syrup Bottle Detection project is an object detection system trained using the YOLOv8n model. The model has been trained on a custom dataset to detect and count syrup bottles in images and videos. <br/>
 
 ### Key Features:
+* YOLOv8n model from the ultralytics module for efficient object detection.
+* Trained on a custom dataset of syrup bottles with separate directories for training, validation, and testing data.
+* A config.yaml file that defines the dataset directory paths for training, validation, and testing.
+* A sample video for testing the model’s performance.
+* The project includes the output video generated after running the detection on the sample video. <br/>
+<br/>
+
+
